@@ -1,4 +1,4 @@
 # Colorize ls output
-alias ls="ls -G"
+alias ls="ls --color=auto"
 
 eval "$(starship init bash)"
