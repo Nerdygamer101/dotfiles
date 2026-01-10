@@ -3,6 +3,8 @@
 format = """
 [](red)\
 $os\
+$container\
+$sudo\
 $username\
 [](bg:peach fg:red)\
 $directory\
@@ -11,6 +13,7 @@ $git_branch\
 $git_status\
 [](fg:yellow bg:green)\
 $c\
+$lua\
 $rust\
 $golang\
 $nodejs\
@@ -277,3 +280,15 @@ surface0 = "#363a4f"
 base = "#24273a"
 mantle = "#1e2030"
 crust = "#181926"
+
+[container]
+disabled = false
+symbol = ""
+style = "bg:red fg:crust"
+format = '[[ $symbol( $context) ](fg:crust bg:red)]($style)'
+
+[sudo]
+disabled = false
+symbol = '󰚑'
+format = '[[ $symbol( $context) ](fg:crust bg:red)]($style)'
+
