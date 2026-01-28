@@ -12,6 +12,7 @@ Enable Context ToolView=false
 Expand Tabs=false
 Icon size for left and right sidebar buttons=32
 Kate PATH=/opt/homebrew/bin
+Last Session=Restic-Scripts
 Modified Notification=false
 Mouse back button action=0
 Mouse forward button action=0
@@ -169,6 +170,7 @@ SetEditor=false
 1512x982 screen: Window-Maximized=true
 1920x1080 screen: Height=854
 1920x1080 screen: Width=1512
+1920x1080 screen: Window-Maximized=true
 
 [filetree]
 editShade=183,220,246
