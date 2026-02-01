@@ -1,0 +1,9 @@
+{
+    "servers": {
+        "ansible":{
+            "command":["ansible-language-server", "--stdio"],
+            "highlightingModeRegex": "Ansible|YAML",
+            "url":"https://github.com/ansible/vscode-ansible"
+        }
+    }
+}

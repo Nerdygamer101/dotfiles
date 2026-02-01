@@ -11,7 +11,8 @@ Elide Tab Text=false
 Enable Context ToolView=false
 Expand Tabs=false
 Icon size for left and right sidebar buttons=32
-Kate PATH=/opt/homebrew/bin
+Kate PATH=/home/bean/.local/bin
+Last Session=Ansible-Testing
 Modified Notification=false
 Mouse back button action=0
 Mouse forward button action=0
@@ -23,7 +24,10 @@ Recent File List Entry Count=10
 Restore Window Configuration=true
 SDI Mode=false
 Save Meta Infos=true
+Session Manager Sort Column=0
+Session Manager Sort Order=0
 Show Full Path in Title=false
+Show Menu Bar=true
 Show Status Bar=true
 Show Symbol In Navigation Bar=true
 Show Tab Bar=true
@@ -169,6 +173,7 @@ SetEditor=false
 1512x982 screen: Window-Maximized=true
 1920x1080 screen: Height=854
 1920x1080 screen: Width=1512
+1920x1080 screen: Window-Maximized=true
 
 [filetree]
 editShade=183,220,246
@@ -182,14 +187,14 @@ sortRole=0
 viewShade=211,190,222
 
 [lspclient]
-AllowedServerCommandLines=/opt/homebrew/bin/bash-language-server start
+AllowedServerCommandLines=/home/bean/.local/bin/ansible-language-server,/home/bean/.local/bin/ansible-language-server --stdio,/home/bean/.local/bin/yaml-language-server --stdio,/home/bean/.local/node_modules/bin/yaml-language-server --stdio,/opt/homebrew/bin/bash-language-server start
 AutoHover=true
 AutoImport=true
 BlockedServerCommandLines=
 CompletionDocumentation=true
 CompletionParens=true
 Diagnostics=true
-FormatOnSave=false
+FormatOnSave=true
 HighlightGoto=true
 HighlightSymbol=true
 IncrementalSync=false
