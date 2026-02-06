@@ -183,8 +183,11 @@ showToolbar=true
 sortRole=0
 viewShade=211,190,222
 
+[kategit]
+lastExecutedGitCmds=git push github main
+
 [lspclient]
-AllowedServerCommandLines=/opt/homebrew/bin/bash-language-server start
+AllowedServerCommandLines=/opt/homebrew/bin/bash-language-server start,/opt/homebrew/bin/marksman server
 AutoHover=true
 AutoImport=true
 BlockedServerCommandLines=
