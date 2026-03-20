@@ -8,4 +8,7 @@ if [[ $(uname) == 'Darwin' ]]; then
   export PATH="/opt/homebrew/bin:$PATH"
 fi
 
+# Load ssh-agent via keychain
+if [[ command -v keychain ]]; then
 eval keychain
+fi
