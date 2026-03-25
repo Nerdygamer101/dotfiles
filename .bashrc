@@ -4,6 +4,9 @@ PATH="$HOME/.local/bin:$PATH"
 # Enable gloabally installed node modules
 PATH="$HOME/.local/node_modules/bin:$PATH"
 
+# Enable additional colorschemes in micro editor. Specifically catppuccin
+export "MICRO_TRUECOLOR=1"
+
 # Colorize ls output
 alias ls="ls --color=auto"
 
