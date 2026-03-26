@@ -4,6 +4,18 @@ PATH="$HOME/.local/bin:$PATH"
 # Enable gloabally installed node modules
 PATH="$HOME/.local/node_modules/bin:$PATH"
 
+# Add appimages to path
+if [[ -d $HOME/AppImages ]]; then
+	PATH="$HOME/AppImages:$PATH"
+fi
+
+# Add nvim alias if installed via appimage
+if [[ -x $HOME/AppImages/neovim ]]; then
+	nvim() {
+		neovim "$@"
+	}
+fi
+
 # Enable additional colorschemes in micro editor. Specifically catppuccin
 export "MICRO_TRUECOLOR=1"
 
@@ -21,3 +33,4 @@ eval "$(fzf --bash)"
 
 # Starship shell prompt
 eval "$(starship init bash)"
+
