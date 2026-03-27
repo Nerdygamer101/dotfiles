@@ -8,7 +8,6 @@ if [[ $(uname) == 'Darwin' ]]; then
   export PATH="/opt/homebrew/bin:$PATH"
 fi
 
-# Load ssh-agent via keychain
-if [[ command -v keychain ]]; then
-eval keychain
-fi
+# Add bash completions from homebrew if it exists
+[[ -r "/opt/homebrew/etc/profile.d/bash_completion.sh" ]] && . "/opt/homebrew/etc/profile.d/bash_completion.sh"
+
