@@ -10,4 +10,3 @@ fi
 
 # Add bash completions from homebrew if it exists
 [[ -r "/opt/homebrew/etc/profile.d/bash_completion.sh" ]] && . "/opt/homebrew/etc/profile.d/bash_completion.sh"
-
