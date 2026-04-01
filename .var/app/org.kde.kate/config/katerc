@@ -84,7 +84,7 @@ Tab Width=4
 Trailing Marker Size=1
 Use Editor Config=true
 Word Wrap=true
-Word Wrap Column=80
+Word Wrap Column=120
 
 [KTextEditor Renderer]
 Animate Bracket Matching=false
