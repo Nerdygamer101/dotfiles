@@ -1,0 +1,10 @@
+{
+    "clipboard": "terminal",
+    "colorcolumn": 120,
+    "colorscheme": "catppuccin-mocha",
+    "diffgutter": true,
+    "hltrailingws": true,
+    "matchbracestyle": "highlight",
+    "relativeruler": true,
+    "rmtrailingws": true
+}
