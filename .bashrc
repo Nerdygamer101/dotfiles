@@ -14,10 +14,19 @@ fi
 # Enable additional colorschemes in micro editor. Specifically catppuccin
 export "MICRO_TRUECOLOR=1"
 
+# Use eza instead of ls if it's available, and use list all options by default
+if [[ -x $(command -v eza) ]]; then
+	ls () {
+		command eza -la "$@"
+	}
+fi
+
 # Colorize ls and auto format it
-ls () {
-	command ls -la --color=auto "$@"
-}
+if ! [[ -x $(command -v eza) ]]; then
+	ls () {
+		command ls -la --color=auto "$@"
+	}
+fi
 # Colorize ls output
 #alias ls="ls --color=auto"
 
