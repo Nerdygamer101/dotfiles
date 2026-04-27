@@ -21,17 +21,12 @@ if [[ -x $(command -v eza) ]]; then
 	}
 fi
 
-# Colorize ls and auto format it
+# Colorize ls and auto format it if eza is not available
 if ! [[ -x $(command -v eza) ]]; then
 	ls () {
 		command ls -la --color=auto "$@"
 	}
 fi
-# Colorize ls output
-#alias ls="ls --color=auto"
-
-# Save a few keystrokes here and there
-#alias lah="ls -lah"
 
 # Add fzf shell integration
 # CTRL-T to paste the selected files/directories on the command line
