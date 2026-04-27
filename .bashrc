@@ -28,6 +28,18 @@ if ! [[ -x $(command -v eza) ]]; then
 	}
 fi
 
+# If we have a kanidm config file, set up a function for the kanidm tools container
+if [[ -x $(command -v podman) ]] && [[ -r $HOME/.config/kanidm ]]; then
+	kanidm () {
+		podman run --rm -it \
+		--network host \
+		-v "$HOME/.cache/kanidm_tokens:/root/.cache/kanidm_tokens" \
+		-v "$HOME/.config/kanidm:/root/.config/kanidm" \
+		docker.io/kanidm/tools:latest \
+		kanidm "$@"
+	}
+fi
+
 # Add fzf shell integration
 # CTRL-T to paste the selected files/directories on the command line
 # ALT-C cd into the selected directory
