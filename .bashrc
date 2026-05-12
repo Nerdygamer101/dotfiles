@@ -27,6 +27,12 @@ if ! [[ -x $(command -v eza) ]]; then
 		command ls -la --color=auto "$@"
 	}
 fi
+# TODO: Combine the above 2 functions
+
+# Make the directory and cd into it
+mkd () {
+	mkdir -p "$1" && cd "$1" || return 1
+}
 
 # If we have a kanidm config file, set up a function for the kanidm tools container
 if [[ -x $(command -v podman) ]] && [[ -r $HOME/.config/kanidm ]]; then
