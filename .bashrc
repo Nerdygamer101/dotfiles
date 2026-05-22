@@ -41,6 +41,7 @@ if [[ -x $(command -v podman) ]] && [[ -r $HOME/.config/kanidm ]]; then
 		--network host \
 		-v "$HOME/.cache/kanidm_tokens:/root/.cache/kanidm_tokens" \
 		-v "$HOME/.config/kanidm:/root/.config/kanidm" \
+		-v "$PWD:$PWD" \
 		docker.io/kanidm/tools:latest \
 		kanidm "$@"
 	}
