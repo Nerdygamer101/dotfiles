@@ -6,6 +6,9 @@ PATH="$HOME/.local/bin:$PATH"
 # Enable gloabally installed node modules
 PATH="$HOME/.local/node_modules/bin:$PATH"
 
+GOPATH=$HOME/go
+export GOPATH
+
 # Add appimages to path
 if [[ -d $HOME/AppImages ]]; then
 	PATH="$HOME/AppImages:$PATH"
