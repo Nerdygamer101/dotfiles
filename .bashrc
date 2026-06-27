@@ -9,6 +9,13 @@ PATH="$HOME/.local/node_modules/bin:$PATH"
 GOPATH=$HOME/go
 export GOPATH
 
+# Make micro the default editor if it's available
+MICRO_EDITOR=$(command -v micro)
+if [[ -x "$MICRO_EDITOR" ]]; then
+	EDITOR="$MICRO_EDITOR"
+	export EDITOR
+fi
+
 # Add appimages to path
 if [[ -d $HOME/AppImages ]]; then
 	PATH="$HOME/AppImages:$PATH"
